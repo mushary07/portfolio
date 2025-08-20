@@ -7,9 +7,9 @@
             <div class="breadcrumb-content" data-aos="fade-up">
                 <p>{{ $work['caption'] }}</p>
                 <h1 class="section-heading">
-                    <img src="{{ asset('assets/images/star-2.png') }}" alt="Star">
+                    <img src="{{ asset('assets/images/others/star.png') }}" alt="Star">
                     {{ $work['name'] }}
-                    <img src="{{ asset('assets/images/star-2.png') }}" alt="Star">
+                    <img src="{{ asset('assets/images/others/star.png') }}" alt="Star">
                 </h1>
             </div>
         </div>
@@ -25,7 +25,7 @@
             <div data-aos="zoom-in">
                 <div class="d-flex project-infos-wrap shadow-box mb-24">
                     <img src="{{ asset('assets/images/bg1.png') }}" alt="BG" class="bg-img">
-                    <img src="{{ asset('assets/images/icon2.png') }}" alt="Icon">
+                    <img src="{{ asset('assets/images/others/float-icon.png') }}" alt="Icon">
                     <div class="project-details-info flex-1">
                         <h3>{{ $work['name'] }}</h3>
                         <p>{{ $work['description'] }}</p>
@@ -72,7 +72,7 @@
                 <div class="project-about-2 d-flex shadow-box mb-24">
                     <img src="{{ asset('assets/images/bg1.png') }}" alt="BG" class="bg-img">
                     <div class="left-details">
-                        <img src="{{ asset('assets/images/icon3.png') }}" alt="Icon">
+                        <img src="{{ asset('assets/images/others/float-icon.png') }}" alt="Icon">
                         <ul>
                             @foreach ($work['content'] as $value)
                                 <li>
