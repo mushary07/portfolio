@@ -1,16 +1,16 @@
 <header class="header-area">
     <div class="container">
         <div class="gx-row d-flex align-items-center justify-content-between">
-            <a href="{{ url('/') }}" class="logo">
-                <img src="{{ asset('assets/images/logo.svg') }}" alt="Logo">
+            <a href="{{ route('home') }}" class="logo">
+                <img src="{{ asset('assets/images/others/logo.png') }}" alt="Logo">
             </a>
 
             <nav class="navbar">
                 <ul class="menu">
-                    <li class="{{ Request::is('/') ? 'active' : '' }}"><a href="{{ url('/') }}">Home</a></li>
-                    <li class="{{ Request::is('about') ? 'active' : '' }}"><a href="{{ url('/about') }}">About</a></li>
-                    <li class="{{ Request::is('works') ? 'active' : '' }}"><a href="{{ url('/works') }}">Works</a></li>
-                    <li class="{{ Request::is('contact') ? 'active' : '' }}"><a href="{{ url('/contact') }}">Contact</a>
+                    <li class="{{ Request::is('/') ? 'active' : '' }}"><a href="{{ route('home') }}">Home</a></li>
+                    <li class="{{ Request::is('about') ? 'active' : '' }}"><a href="{{ route('about') }}">About</a></li>
+                    <li class="{{ Request::is('works') ? 'active' : '' }}"><a href="{{ route('works') }}">Works</a></li>
+                    <li class="{{ Request::is('contact') ? 'active' : '' }}"><a href="{{ route('contact') }}">Contact</a>
                     </li>
                     <li class="d-lg-none">
                         <button class="theme-toggle theme-icon-btn d-flex align-items-center gap-1" title="Toggle Theme">

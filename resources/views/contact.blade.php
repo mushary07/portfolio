@@ -13,8 +13,7 @@
                             </div>
                             <div class="right">
                                 <span>MAIL us</span>
-                                <h4>info@bluebase.com</h4>
-                                <h4>info@bluebase2.com</h4>
+                                <h4>mushari1999@gmail.com</h4>
                             </div>
                         </li>
 
@@ -24,37 +23,37 @@
                             </div>
                             <div class="right">
                                 <span>Contact Us</span>
-                                <h4>+1 504-899-8221</h4>
-                                <h4>+1 504-749-5456</h4>
+                                <h4>+91 989-417-5023</h4>
                             </div>
                         </li>
 
                         <li class="d-flex align-items-center" data-aos="zoom-in">
                             <div class="icon-box shadow-box">
-                                <i class="iconoir-pin-alt"></i>
+                                <i class="iconoir-map"></i>
                             </div>
                             <div class="right">
                                 <span>Location</span>
-                                <h4>22 Baker Street, Texas <br>United States <br>W1U 3BW</h4>
+                                <h4>67 Paris Nagar, Vayalkarai Street, <br>Karaikal</h4>
                             </div>
                         </li>
                     </ul>
 
                     <h3 data-aos="fade-up">Social Info</h3>
                     <ul class="social-links d-flex align-center" data-aos="zoom-in">
-                        <li><a class="shadow-box" href=""><i class="iconoir-dribbble"></i></a></li>
-                        <li><a class="shadow-box" href=""><i class="iconoir-twitter"></i></a></li>
-                        <li><a class="shadow-box" href=""><i class="iconoir-instagram"></i></a></li>
+                        <li><a class="shadow-box" href="https://www.linkedin.com/in/mushary07" target="_blank" rel="noopener"><i class="iconoir-linkedin"></i></a></li>
+                        <li><a class="shadow-box" href="https://www.instagram.com/mushary07" target="_blank" rel="noopener"><i class="iconoir-instagram"></i></a></li>
+                        <li><a class="shadow-box" href="https://www.facebook.com/mushary07" target="_blank" wire:rel="noopener"><i class="iconoir-facebook"></i></a></li>
                     </ul>
                 </div>
 
                 <div data-aos="zoom-in" class="contact-form">
                     <div class="shadow-box">
-                        <img src="./assets/images/bg1.png" alt="BG" class="bg-img">
-                        <img src="./assets/images/icon3.png" alt="Icon">
+                        <img src="{{ asset('assets/images/others/bg.png') }}" alt="BG" class="bg-img">
+                        <img src="{{ asset('assets/images/contact/float-icon.png') }}" alt="Icon">
                         <h1>Let’s work <span>together.</span></h1>
                         <form method="POST" action="mailer.php">
-                            <div class="alert alert-success messenger-box-contact__msg" style="display: none" role="alert">
+                            <div class="alert alert-success messenger-box-contact__msg" style="display: none"
+                                role="alert">
                                 Your message was sent successfully.
                             </div>
                             <div class="input-group">

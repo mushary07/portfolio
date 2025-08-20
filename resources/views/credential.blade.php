@@ -7,9 +7,9 @@
                 <div class="credential-sidebar-wrap" data-aos="zoom-in">
                     <div class="credential-sidebar text-center">
                         <div class="shadow-box">
-                            <img src="./assets/images/bg1.png" alt="BG" class="bg-img">
+                            <img src="{{ asset('assets/images/others/bg.png') }}" alt="BG" class="bg-img">
                             <div class="img-box">
-                                <img src="./assets/images/me.png" alt="About Me">
+                                <img src="{{ asset('assets/images/home/mushary07.png') }}" alt="About Me">
                             </div>
                             <h2>David Henderson</h2>
                             <p>@davidhenderson</p>
@@ -21,7 +21,7 @@
                                 <li><a href="#"><i class="iconoir-facebook-tag"></i></a></li>
                             </ul>
 
-                            <a href="./contact.html" class="theme-btn">Contact Me</a>
+                            <a href="{{ route('contact') }}" class="theme-btn">Contact Me</a>
                         </div>
                     </div>
                 </div>

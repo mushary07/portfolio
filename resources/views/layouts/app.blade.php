@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/aos.css') }}">
     <link id="theme-style" rel="stylesheet" href="{{ asset('assets/css/style-light.css') }}">
+    <link rel="icon" type="image/png" href="{{ asset('favicon.png') }}">
 
     <style>
         .theme-icon-btn {
