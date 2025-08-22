@@ -819,6 +819,23 @@ ol {
 .project-details-wrap .project-about-2 .right-details p:last-child {
     margin-bottom: 0;
 }
+.project-details-wrap .small-btn {
+    margin-top: 40px;
+    color: var(--primary_color);
+    font-size: 18px;
+    opacity: 0.9;
+    display: inline-block;
+    line-height: 1.4;
+    padding: 12px 24px;
+    border-radius: 8px;
+    transition: .3s;
+}
+
+.project-details-wrap .small-btn:hover {
+    background: #ffffff;
+    color: #0F0F0F;
+}
+
 .project-details-wrap .big-btn {
     margin-top: 100px;
     color: #fff;
@@ -1909,6 +1926,11 @@ ol {
     .project-details-wrap .project-about-2,
     .project-details-wrap .project-about-2 .left-details {
         padding: 30px;
+    }
+    .project-details-wrap .small-btn {
+        margin-top: 20px;
+        font-size: 16px;
+        padding: 10px 20px;
     }
     .project-details-wrap .big-btn {
         margin-top: 50px;

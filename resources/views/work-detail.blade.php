@@ -94,10 +94,18 @@
             <img src="{{ asset($work['banner-3']) }}" alt="Project Details">
         </div>
 
-        <div class="container d-flex align-items-center justify-content-center" data-aos="zoom-in">
-            <a href="#" class="big-btn shadow-box">
-                Next Project
-            </a>
+        <div class="container d-flex align-items-center justify-content-center gap-5" data-aos="zoom-in">
+            @if ($id > $minId)
+                <a href="{{ route('work-detail', [$id - 1]) }}" class="small-btn shadow-box">
+                    Previous Project
+                </a>
+            @endif
+
+            @if ($id < $maxId)
+                <a href="{{ route('work-detail', [$id + 1]) }}" class="small-btn shadow-box">
+                    Next Project
+                </a>
+            @endif
         </div>
 
     </section>

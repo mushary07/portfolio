@@ -52,14 +52,14 @@
                         <h3>EDUCATION</h3>
                         <ul>
                             <li>
-                                <p class="date">2014 - 2016</p>
-                                <h2>Higher Secondary School Certificate</h2>
-                                <p class="type">St Mary's Higher Secondary School</p>
+                                <p class="date">2017 - 2020</p>
+                                <h2>E.G.S. Pillay Arts & Science College, Nagapattinam</h2>
+                                <p class="type">Bharathidasan University, Tiruchirappalli</p>
                             </li>
                             <li>
-                                <p class="date">2017 - 2020</p>
-                                <h2>Bachelor of Computer Application</h2>
-                                <p class="type">Bharathidasan University, Tiruchirappalli</p>
+                                <p class="date">2014 - 2016</p>
+                                <h2>Higher Secondary School Certificate</h2>
+                                <p class="type">St. Mary’s Higher Secondary School, Karaikal</p>
                             </li>
                         </ul>
                     </div>
@@ -79,6 +79,9 @@
                                     </a>
                                     <a href="https://www.instagram.com/mushary07" target="_blank"rel="noopener">
                                         <i class="iconoir-instagram"></i>
+                                    </a>
+                                    <a href="https://www.facebook.com/mushary07" target="_blank"rel="noopener">
+                                        <i class="iconoir-facebook"></i>
                                     </a>
                                 </div>
                                 <div class="d-flex align-items-center justify-content-between">

@@ -12,7 +12,7 @@ class PortfolioController extends Controller
     {
         $this->works = [
             [
-                'id' => 4,
+                'id' => 1,
                 'name' => "ProjectX",
                 'caption' => "Multi-vendor & Delivery Platform",
                 'description' => "A large-scale multi-vendor platform featuring customer apps, admin dashboards, vendor panels, websites, and delivery applications for a complete marketplace ecosystem.",
@@ -28,12 +28,11 @@ class PortfolioController extends Controller
                 'gallery-4' => "assets/images/projects/thookuchatti/gallery-4.jpeg",
                 'content' => [
                     ["title" => "Year", "value" => "2024 – Present"],
-                    ["title" => "Client", "value" => "-"],
                     ["title" => "Services", "value" => "Multi-Vendor Platform, Web & Mobile Applications"],
                 ],
             ],
             [
-                'id' => 1,
+                'id' => 2,
                 'name' => "Jacees School",
                 'caption' => "School Management System",
                 'description' => "A web-based system to manage student enrollment, attendance, examinations, fees, and teacher administration, providing a centralized digital platform for school operations.",
@@ -49,12 +48,11 @@ class PortfolioController extends Controller
                 'gallery-4' => "assets/images/projects/thookuchatti/gallery-4.jpeg",
                 'content' => [
                     ["title" => "Year", "value" => "2024"],
-                    ["title" => "Client", "value" => "Jacees School"],
                     ["title" => "Services", "value" => "School ERP, Web Application"],
                 ],
             ],
             [
-                'id' => 5,
+                'id' => 3,
                 'name' => "Caesars Kids",
                 'caption' => "Food Delivery App for Kids",
                 'description' => "A mobile-first food delivery platform tailored for kids’ meals, with a backend CMS for administrators to manage orders, menus, and vendors.",
@@ -70,12 +68,11 @@ class PortfolioController extends Controller
                 'gallery-4' => "assets/images/projects/thookuchatti/gallery-4.jpeg",
                 'content' => [
                     ["title" => "Year", "value" => "2024"],
-                    ["title" => "Client", "value" => "Caesars Kids"],
                     ["title" => "Services", "value" => "Food Delivery, Mobile App, Admin CMS"],
                 ],
             ],
             [
-                'id' => 3,
+                'id' => 4,
                 'name' => "Thookuchatii",
                 'caption' => "Multi-vendor & Delivery Platform",
                 'description' => "Thookuchatii is a comprehensive multi-vendor delivery system designed to connect customers, vendors, administrators, and delivery personnel through a seamless and scalable platform. The system enhances order management, delivery tracking, and customer engagement, ensuring a smooth end-to-end experience.",
@@ -91,12 +88,11 @@ class PortfolioController extends Controller
                 'gallery-4' => "assets/images/projects/thookuchatti/gallery-4.jpeg",
                 'content' => [
                     ["title" => "Year", "value" => "2023"],
-                    ["title" => "Client", "value" => "-"],
                     ["title" => "Services", "value" => "Multi-Vendor Delivery System, Web & Mobile Applications"],
                 ],
             ],
             [
-                'id' => 2,
+                'id' => 5,
                 'name' => "Proman",
                 'caption' => "Employee Management",
                 'description' => "An enterprise solution built for IT company operations, focusing on employee management, task assignments, project tracking, and HR functionalities.",
@@ -112,7 +108,6 @@ class PortfolioController extends Controller
                 'gallery-4' => "assets/images/projects/thookuchatti/gallery-4.jpeg",
                 'content' => [
                     ["title" => "Year", "value" => "2023 – Present"],
-                    ["title" => "Client", "value" => "-"],
                     ["title" => "Services", "value" => "Employee Management, HR System, Web Application"],
                 ],
             ],
@@ -133,7 +128,6 @@ class PortfolioController extends Controller
                 'gallery-4' => "assets/images/projects/thookuchatti/gallery-4.jpeg",
                 'content' => [
                     ["title" => "Year", "value" => "2023"],
-                    ["title" => "Client", "value" => "-"],
                     ["title" => "Services", "value" => "SaaS Platform, Petcare Application"],
                 ],
             ],
@@ -154,14 +148,13 @@ class PortfolioController extends Controller
                 'gallery-4' => "assets/images/projects/thookuchatti/gallery-4.jpeg",
                 'content' => [
                     ["title" => "Year", "value" => "2023"],
-                    ["title" => "Client", "value" => "Blacksalt"],
                     ["title" => "Services", "value" => "Corporate Website, CMS Integration"],
                 ],
             ],
             [
                 'id' => 8,
                 'name' => "Al Shafat Website",
-                'caption' => "Studio Website.",
+                'caption' => "Studio Website",
                 'description' => "A website platform for Al Shafat to post and manage studio works and social service initiatives using an integrated admin CMS.",
                 'timeline_description' => "Developed to provide Al Shafat with an online space to share studio projects and social service activities, ensuring content is easily manageable.",
                 'about' => "Features include portfolio galleries, blog-style posts, event highlights, and a backend CMS for content management.",
@@ -175,7 +168,6 @@ class PortfolioController extends Controller
                 'gallery-4' => "assets/images/projects/thookuchatti/gallery-4.jpeg",
                 'content' => [
                     ["title" => "Year", "value" => "2023"],
-                    ["title" => "Client", "value" => "Al Shafat"],
                     ["title" => "Services", "value" => "Portfolio Website, Admin CMS"],
                 ],
             ],
@@ -196,7 +188,6 @@ class PortfolioController extends Controller
                 'gallery-4' => "assets/images/projects/thookuchatti/gallery-4.jpeg",
                 'content' => [
                     ["title" => "Year", "value" => "2022"],
-                    ["title" => "Client", "value" => "-"],
                     ["title" => "Services", "value" => "HR System, Payroll Automation, Web Application"],
                 ],
             ],
@@ -217,7 +208,6 @@ class PortfolioController extends Controller
                 'gallery-4' => "assets/images/projects/thookuchatti/gallery-4.jpeg",
                 'content' => [
                     ["title" => "Year", "value" => "2022"],
-                    ["title" => "Client", "value" => "-"],
                     ["title" => "Services", "value" => "Reselling App, Marketplace Platform"],
                 ],
             ],
@@ -263,8 +253,12 @@ class PortfolioController extends Controller
      */
     public function work_detail($id)
     {
-        $work = $this->works[$id];
-        return view('work-detail', compact('work'));
+        $works = $this->works;
+        $work = collect($works)->firstWhere('id', $id);
+        $minId = collect($works)->min('id');
+        $maxId = collect($works)->max('id');
+
+        return view('work-detail', compact('work', 'id', 'minId', 'maxId'));
     }
 
     /**
