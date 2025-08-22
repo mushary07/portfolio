@@ -48,7 +48,7 @@
                                 <div class="about-crenditials-box info-box shadow-box h-full">
                                     <a class="overlay-link" href="{{ route('credential') }}"></a>
                                     <img src="{{ asset('assets/images/others/bg.png') }}" alt="BG" class="bg-img">
-                                    <img src="{{ asset('assets/images/others/float-icon.png') }}" alt="Sign">
+                                    <img src="{{ asset('assets/images/home/projects.png') }}" alt="Sign">
                                     <div class="d-flex align-items-center justify-content-between">
                                         <div class="infos">
                                             <h4>more about me</h4>
