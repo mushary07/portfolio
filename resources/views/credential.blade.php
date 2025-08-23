@@ -28,7 +28,7 @@
                 <div class="credential-content flex-1">
                     <div class="credential-about" data-aos="zoom-in">
                         <h2>About Me</h2>
-                        <p>"Hi, I'm Mushari, and I have 4 years of experience in Laravel development. I've worked on
+                        <p>"Hi, I'm Mushari, and I have 4 years of experience in application development. I've worked on
                             building web applications, developing APIs, and integrating front-end technologies like Vue.js.
                             I'm skilled in database management, optimizing performance, and ensuring secure, efficient code.
                             I'm passionate about learning and improving my skills to deliver quality work.</p>
@@ -146,9 +146,9 @@
                             </div>
 
                             <div class="skill-item" data-aos="zoom-in">
-                                <span class="percent">88%</span>
-                                <h3 class="name">JavaScript</h3>
-                                <p>Frontend interactivity</p>
+                                <span class="percent">85%</span>
+                                <h3 class="name">Livewire</h3>
+                                <p>Dynamic Laravel components</p>
                             </div>
 
                             <div class="skill-item" data-aos="zoom-in">
@@ -158,9 +158,9 @@
                             </div>
 
                             <div class="skill-item" data-aos="zoom-in">
-                                <span class="percent">85%</span>
-                                <h3 class="name">Livewire</h3>
-                                <p>Dynamic Laravel components</p>
+                                <span class="percent">88%</span>
+                                <h3 class="name">JavaScript</h3>
+                                <p>Frontend interactivity</p>
                             </div>
 
                             <div class="skill-item" data-aos="zoom-in">

@@ -34,13 +34,13 @@
                         <h3>EXPERIENCE</h3>
                         <ul>
                             <li>
-                                <p class="date">2021 - 2023</p>
-                                <h2>Assistant Systems Engineer</h2>
+                                <p class="date">2023 - Present</p>
+                                <h2>Systems Engineer</h2>
                                 <p class="type">Ahsan Solutions</p>
                             </li>
                             <li>
-                                <p class="date">2023 - Present</p>
-                                <h2>Systems Engineer</h2>
+                                <p class="date">2021 - 2023</p>
+                                <h2>Assistant Systems Engineer</h2>
                                 <p class="type">Ahsan Solutions</p>
                             </li>
                         </ul>
@@ -53,8 +53,8 @@
                         <ul>
                             <li>
                                 <p class="date">2017 - 2020</p>
-                                <h2>E.G.S. Pillay Arts & Science College, Nagapattinam</h2>
-                                <p class="type">Bharathidasan University, Tiruchirappalli</p>
+                                <h2>Bachelor of Computer Application</h2>
+                                <p class="type">E.G.S. Pillay Arts & Science College, Nagapattinam</p>
                             </li>
                             <li>
                                 <p class="date">2014 - 2016</p>
