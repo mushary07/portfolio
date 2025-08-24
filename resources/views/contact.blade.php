@@ -40,9 +40,12 @@
 
                     <h3 data-aos="fade-up">Social Info</h3>
                     <ul class="social-links d-flex align-center" data-aos="zoom-in">
-                        <li><a class="shadow-box" href="https://www.linkedin.com/in/mushary07" target="_blank" rel="noopener"><i class="iconoir-linkedin"></i></a></li>
-                        <li><a class="shadow-box" href="https://www.instagram.com/mushary07" target="_blank" rel="noopener"><i class="iconoir-instagram"></i></a></li>
-                        <li><a class="shadow-box" href="https://www.facebook.com/mushary07" target="_blank" wire:rel="noopener"><i class="iconoir-facebook"></i></a></li>
+                        <li><a class="shadow-box" href="https://www.linkedin.com/in/mushary07" target="_blank"
+                                rel="noopener"><i class="iconoir-linkedin"></i></a></li>
+                        <li><a class="shadow-box" href="https://www.instagram.com/mushary07" target="_blank"
+                                rel="noopener"><i class="iconoir-instagram"></i></a></li>
+                        <li><a class="shadow-box" href="https://www.facebook.com/mushary07" target="_blank"
+                                wire:rel="noopener"><i class="iconoir-facebook"></i></a></li>
                     </ul>
                 </div>
 
@@ -51,25 +54,54 @@
                         <img src="{{ asset('assets/images/others/bg.png') }}" alt="BG" class="bg-img">
                         <img src="{{ asset('assets/images/contact/float-icon.png') }}" alt="Icon">
                         <h1>Let’s work <span>together.</span></h1>
-                        <form method="POST" action="mailer.php">
-                            <div class="alert alert-success messenger-box-contact__msg" style="display: none"
-                                role="alert">
-                                Your message was sent successfully.
-                            </div>
+                        <form method="POST" action="{{ route('mail') }}">
+                            @csrf
+
+                            {{-- Success Message --}}
+                            @if (session('success'))
+                                <div class="alert alert-success alert-dismissible fade show messenger-box-contact__msg"
+                                    role="alert">
+                                    {{ session('success') }}
+                                    <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                        aria-label="Close"></button>
+                                </div>
+                            @endif
+
+                            {{-- Error Messages --}}
+                            @if ($errors->any())
+                                <div class="alert alert-danger alert-dismissible fade show messenger-box-contact__msg"
+                                    role="alert">
+                                    <ul class="mb-0">
+                                        @foreach ($errors->all() as $error)
+                                            <li>{{ $error }}</li>
+                                        @endforeach
+                                    </ul>
+                                    <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                        aria-label="Close"></button>
+                                </div>
+                            @endif
+
                             <div class="input-group">
-                                <input type="text" name="full-name" id="full-name" placeholder="Name *">
+                                <input type="text" name="name" id="full-name" placeholder="Name *"
+                                    value="{{ old('name') }}" required>
                             </div>
+
                             <div class="input-group">
-                                <input type="email" name="email" id="email" placeholder="Email *">
+                                <input type="email" name="email" id="email" placeholder="Email *"
+                                    value="{{ old('email') }}" required>
                             </div>
+
                             <div class="input-group">
-                                <input type="text" name="subject" id="subject" placeholder="Your Subject *">
+                                <input type="text" name="subject" id="subject" placeholder="Your Subject *"
+                                    value="{{ old('subject') }}" required>
                             </div>
+
                             <div class="input-group">
-                                <textarea name="message" id="message" placeholder="Your Message *"></textarea>
+                                <textarea name="message" id="message" placeholder="Your Message *" required>{{ old('message') }}</textarea>
                             </div>
+
                             <div class="input-group">
-                                <button class="theme-btn submit-btn" name="submit" type="submit">Send Message</button>
+                                <button class="theme-btn submit-btn" type="submit">Send Message</button>
                             </div>
                         </form>
                     </div>
