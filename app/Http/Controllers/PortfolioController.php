@@ -313,7 +313,7 @@ class PortfolioController extends Controller
             'message' => 'required|string',
         ]);
 
-        Mail::to('you@example.com')->send(new ContactMail($validated));
+        Mail::to('mushari1999@gmail.com')->send(new ContactMail($validated));
 
         return back()->with('success', 'Your message has been sent successfully!');
     }
