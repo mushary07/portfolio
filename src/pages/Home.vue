@@ -42,9 +42,6 @@
                       Vue.js + Ionic PWA for <b>order tracking</b>
                       <img :src="dotSvg" alt="dot" />
 
-                      Laravel + Reverb backend for <b>delivery management</b>
-                      <img :src="dotSvg" alt="dot" />
-
                       Real-time updates, notifications & responsive design
                       <img :src="dotSvg" alt="dot" />
                     </span>

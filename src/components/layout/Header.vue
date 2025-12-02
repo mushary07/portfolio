@@ -112,4 +112,41 @@ const closeMenu = () => (menuOpen.value = false);
 .show-menu.active span:nth-child(3) {
   transform: translateY(-6px) rotate(-45deg);
 }
+
+/* Default: Desktop View */
+.show-menu {
+  display: none; /* hide hamburger on desktop */
+}
+
+.navbar {
+  display: flex;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  /* Show hamburger on mobile */
+  .show-menu {
+    display: flex;
+  }
+
+  /* Hide full menu on mobile unless opened */
+  .navbar {
+    display: none;
+  }
+
+  .navbar.active {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
 </style>
