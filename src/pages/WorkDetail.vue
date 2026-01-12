@@ -124,9 +124,9 @@ import { ref, watch } from "vue"
 import { works } from "@/data/works.js"
 
 // static images
-import starImg from "@/assets/images/others/star.png"
-import bg1Img from "@/assets/images/others/bg.png"
-import floatIconImg from "@/assets/images/others/float-icon.png"
+import starImg from "/assets/images/others/star.png"
+import bg1Img from "/assets/images/others/bg.png"
+import floatIconImg from "/assets/images/others/float-icon.png"
 
 const route = useRoute()
 

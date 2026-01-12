@@ -122,8 +122,8 @@
 <script setup>
 import { ref } from "vue"
 
-import bgImg from "@/assets/images/others/bg.png"
-import floatIcon from "@/assets/images/contact/float-icon.png"
+import bgImg from "/assets/images/others/bg.png"
+import floatIcon from "/assets/images/contact/float-icon.png"
 
 const form = ref({
     name: "",
