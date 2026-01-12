@@ -169,10 +169,10 @@
 <script setup>
 import { RouterLink } from "vue-router"
 
-import bgImg from "/assets/images/others/bg.png"
-import aboutImg from "/assets/images/about/mushary07.png"
-import starImg from "/assets/images/others/star.png"
-import floatIcon from "/assets/images/others/float-icon.png"
-import iconSvg from "/assets/images/others/icon.svg"
-import credentialImg from "/assets/images/about/credential.png"
+import bgImg from "@/assets/images/others/bg.png"
+import aboutImg from "@/assets/images/about/mushary07.png"
+import starImg from "@/assets/images/others/star.png"
+import floatIcon from "@/assets/images/others/float-icon.png"
+import iconSvg from "@/assets/images/others/icon.svg"
+import credentialImg from "@/assets/images/about/credential.png"
 </script>

@@ -54,7 +54,7 @@
 <script setup>
 import { ref } from "vue";
 import { useRoute, RouterLink } from "vue-router";
-import logo from "/assets/images/others/logo.png";
+import logo from "@/assets/images/others/logo.png";
 import { useTheme } from "@/composables/useTheme.js";
 
 const route = useRoute();

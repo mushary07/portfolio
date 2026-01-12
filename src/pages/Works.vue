@@ -44,7 +44,7 @@
 import { works } from "@/data/works.js"
 
 // Import static images
-import starImg from "/assets/images/others/star.png"
-import bgImg from "/assets/images/others/bg.png"
-import iconImg from "/assets/images/others/icon.svg"
+import starImg from "@/assets/images/others/star.png"
+import bgImg from "@/assets/images/others/bg.png"
+import iconImg from "@/assets/images/others/icon.svg"
 </script>

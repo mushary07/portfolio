@@ -142,8 +142,8 @@
 <script setup>
 import { ref } from "vue";
 
-import bgImg from "/assets/images/others/bg.png"
-import mushary07 from "/assets/images/home/mushary07.png"
+import bgImg from "@/assets/images/others/bg.png"
+import mushary07 from "@/assets/images/home/mushary07.png"
 
 const skills = ref([
   { name: "Laravel", percent: 95, desc: "API & backend development" },
