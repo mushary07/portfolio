@@ -2,33 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Mushary Portfolio</title>
+    <script>
+      // Save the requested path
+      const path = location.pathname.replace('/portfolio', '');
 
-    <!-- Fonts & Icons -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css" />
+      sessionStorage.setItem('spa-redirect', path);
 
-    <!-- Local CSS -->
-    <link rel="stylesheet" href="/portfolio/assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="/portfolio/assets/css/aos.css" />
-
-    <!-- Theme Stylesheet (Vue controls switching) -->
-    <link id="theme-style" rel="stylesheet" />
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="/portfolio/favicon.png" />
-    <script type="module" crossorigin src="/portfolio/assets/index-Br4aeVxt.js"></script>
-    <link rel="stylesheet" crossorigin href="/portfolio/assets/index-DLGSB_pq.css">
+      // Redirect to app root
+      location.replace('/portfolio/');
+    </script>
   </head>
-
-  <body>
-    <div id="app"></div>
-
-    <!-- Vue App -->
-  </body>
+  <body></body>
 </html>
