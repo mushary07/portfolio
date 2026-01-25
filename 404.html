@@ -5,12 +5,12 @@
 
     <script>
       // Save the requested path
-      const path = location.pathname.replace('/portfolio', '');
+      const path = location.pathname.replace('/', '');
 
       sessionStorage.setItem('spa-redirect', path);
 
       // Redirect to app root
-      location.replace('/portfolio/');
+      location.replace('/');
     </script>
   </head>
   <body></body>
