@@ -21,7 +21,7 @@
     <meta property="og:url" content="https://mushary07.github.io/" />
     <meta property="og:title" content="Mushari - Full-Stack Laravel & Vue.js Developer" />
     <meta property="og:description" content="Discover my portfolio of scalable web applications, multi-vendor platforms, and innovative projects built with Laravel and Vue.js." />
-    <meta property="og:image" content="https://mushary07.github.io/assets/images/home/mushary07.webp" />
+    <meta property="og:image" content="https://mushary07.github.io/assets/images/home/mushary07.png" />
     <meta property="og:site_name" content="Mushari Portfolio" />
     <meta property="og:locale" content="en_US" />
 
@@ -29,13 +29,13 @@
     <meta name="instagram:url" content="https://www.instagram.com/mushary07" />
     <meta name="instagram:title" content="Mushari - Full-Stack Developer" />
     <meta name="instagram:description" content="Explore projects built with Laravel and Vue.js - scalable platforms and modern web solutions." />
-    <meta name="instagram:image" content="https://mushary07.github.io/assets/images/home/mushary07.webp" />
+    <meta name="instagram:image" content="https://mushary07.github.io/assets/images/home/mushary07.png" />
 
     <!-- LinkedIn -->
     <meta name="linkedin:url" content="https://www.linkedin.com/in/mushary07" />
     <meta name="linkedin:title" content="Mushari - Full-Stack Developer" />
     <meta name="linkedin:description" content="Explore projects built with Laravel and Vue.js - scalable platforms and modern web solutions." />
-    <meta name="linkedin:image" content="https://mushary07.github.io/assets/images/home/mushary07.webp" />
+    <meta name="linkedin:image" content="https://mushary07.github.io/assets/images/home/mushary07.png" />
 
     <!-- Robots & Indexing -->
     <meta name="robots" content="index, follow" />
@@ -72,16 +72,119 @@
         "https://www.facebook.com/mushary07"
       ],
       "knowsAbout": ["Laravel", "Vue.js", "PHP", "JavaScript", "Web Development", "Full-Stack Development"],
-      "image": "https://mushary07.github.io/assets/images/home/mushary07.webp",
+      "image": "https://mushary07.github.io/assets/images/home/mushary07.png",
       "description": "Full-stack developer specializing in Laravel and Vue.js. Building scalable web applications and multi-vendor platforms."
     }
     </script>
-    <script type="module" crossorigin src="/assets/index-CN0uDLR3.js"></script>
+    <script type="module" crossorigin src="/assets/index-PejPjNal.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-DLGSB_pq.css">
   </head>
 
   <body>
     <div id="app"></div>
+
+    <!-- Developer Tools Restriction -->
+    <script>
+      // Disable right-click context menu
+      document.addEventListener('contextmenu', function(event) {
+        event.preventDefault();
+        return false;
+      });
+
+      // Disable keyboard shortcuts for developer tools
+      document.addEventListener('keydown', function(event) {
+        // F12 - Opens developer tools
+        if (event.key === 'F12') {
+          event.preventDefault();
+          return false;
+        }
+
+        // Ctrl+Shift+I - Opens developer tools (Chrome, Edge)
+        if (event.ctrlKey && event.shiftKey && event.key === 'I') {
+          event.preventDefault();
+          return false;
+        }
+
+        // Ctrl+Shift+J - Opens console (Chrome, Edge)
+        if (event.ctrlKey && event.shiftKey && event.key === 'J') {
+          event.preventDefault();
+          return false;
+        }
+
+        // Ctrl+Shift+C - Opens element inspector (Chrome, Edge)
+        if (event.ctrlKey && event.shiftKey && event.key === 'C') {
+          event.preventDefault();
+          return false;
+        }
+
+        // Ctrl+Shift+K - Opens console (Firefox)
+        if (event.ctrlKey && event.shiftKey && event.key === 'K') {
+          event.preventDefault();
+          return false;
+        }
+
+        // Ctrl+Shift+M - Opens responsive design mode (Firefox)
+        if (event.ctrlKey && event.shiftKey && event.key === 'M') {
+          event.preventDefault();
+          return false;
+        }
+
+        // Cmd+Shift+I - Opens developer tools (Safari on Mac)
+        if (event.metaKey && event.shiftKey && event.key === 'I') {
+          event.preventDefault();
+          return false;
+        }
+
+        // Cmd+Shift+J - Opens console (Safari on Mac)
+        if (event.metaKey && event.shiftKey && event.key === 'J') {
+          event.preventDefault();
+          return false;
+        }
+
+        // Cmd+Shift+C - Opens element inspector (Safari on Mac)
+        if (event.metaKey && event.shiftKey && event.key === 'C') {
+          event.preventDefault();
+          return false;
+        }
+
+        // Cmd+Option+I - Opens developer tools (Safari on Mac)
+        if (event.metaKey && event.altKey && event.key === 'i') {
+          event.preventDefault();
+          return false;
+        }
+      });
+
+      // Detect if developer tools are open (optional additional check)
+      const devtools = { open: false };
+      const threshold = 160;
+
+      setInterval(function() {
+        if (window.outerWidth - window.innerWidth > threshold ||
+            window.outerHeight - window.innerHeight > threshold) {
+          if (!devtools.open) {
+            devtools.open = true;
+            console.clear();
+          }
+        } else {
+          devtools.open = false;
+        }
+      }, 500);
+
+      // Disable inspect element by disabling right-click on specific elements
+      document.addEventListener('mousedown', function(event) {
+        if (event.button === 2) {
+          event.preventDefault();
+          return false;
+        }
+      });
+
+      document.addEventListener('mouseup', function(event) {
+        if (event.button === 2) {
+          event.preventDefault();
+          return false;
+        }
+      });
+    </script>
 
     <!-- Vue App -->
   </body>
